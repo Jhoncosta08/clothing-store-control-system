@@ -1,0 +1,59 @@
+.vendas-home-box {
+    background-color: #d9ad45;
+    border-radius: 15px;
+}
+
+.numero-vendas-home {
+    color: #09131c;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.titulo-vendas-home {
+    color: #09131c;
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.vendas-nuumeros-box {
+    margin-top: 15px;
+}
+
+.titulo-vendas-dia-box {
+    margin-top: 15px;
+}
+
+.titulo-vendas-dia-home {
+    color: #09131c;
+    margin-right: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.titulo-vendas-dia-box {
+    background-color: #d9ad45;
+    border-radius: 15px;
+}
+
+.data-dia-vendas-home {
+    color: #09131c;
+    margin-right: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.info-vendas-dia-home {
+    color: #09131c;
+    margin-right: 5px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.info-data-dia-vendas-home {
+    color: #09131c;
+    margin-right: 5px;
+    font-size: 15px;
+    font-weight: 500;
+}

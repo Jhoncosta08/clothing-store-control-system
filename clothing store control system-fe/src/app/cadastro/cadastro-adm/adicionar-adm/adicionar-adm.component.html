@@ -1,0 +1,182 @@
+<div class="content-fluid cadastro-de-adm-content">
+    <mat-card class="home mat-elevation-z3">
+        <div class="row">
+            <div class="col-sm">
+                <button routerLink="/Lista-adm" class="btn btn-outline-secondary back-button" type="submit"><i class="material-icons item-vertical" style="margin-top: -3px">keyboard_backspace</i>Voltar</button>
+            </div>
+
+            <div class="col-sm text-center main-color cadastro-de-adm-titulo">
+                <h1>Cadastro Administrador</h1>
+            </div>
+
+            <div class="col-sm">
+                <!--div para dar espaçamento-->
+            </div>
+        </div>
+
+        <div class="row box-dados-content">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm dados-pessoais-de-adm-titulo">
+                        <mat-icon class="dados-icon-title">group</mat-icon>
+                        <h1 class="main-color">Dados pessoais</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm text-center">
+                        <label for="imageperfilusuario">
+                            <img src="assets/img/perfil-foto.jpg" class="img-responsive profile_img-upload imagem-circular" style="cursor:pointer;" alt="Foto de Perfil">
+                        </label>
+                        <input type="file" id="imageperfilusuario"/>
+                        <input type="text" style="display: none;" id="Foto" name="Foto">
+                        <p class="foto-cadastro-adm main-color">foto</p>
+                    </div>
+
+                    <div class="col-sm">
+                        <form class="example-form">
+
+                            <mat-form-field class="example-full-width">
+                                <mat-label>Nome</mat-label>
+                                <input matInput required>
+                            </mat-form-field>
+
+                            <mat-form-field class="example-full-width">
+                                <mat-label>CPF</mat-label>
+                                <input matInput required>
+                            </mat-form-field>
+
+                            <mat-form-field class="example-full-width">
+                                <mat-label>RG</mat-label>
+                                <input matInput required>
+                            </mat-form-field>
+                        </form>                                                 
+                    </div>
+
+                    <div class="col-sm">
+                        <form class="example-form">
+                            <mat-form-field class="example-full-width">
+                              <mat-label>Celular</mat-label>
+                              <input type="tel" matInput required>
+                            </mat-form-field>
+
+                            <mat-form-field class="example-full-width">
+                                <mat-label>Telefone</mat-label>
+                                <input  type="tel" matInput>
+                            </mat-form-field>
+
+                            <mat-form-field class="example-full-width">
+                                <mat-label>E-mail</mat-label>
+                                <input type="email" matInput required>
+                            </mat-form-field>
+                        </form>  
+                    </div>
+
+                    <div class="col-sm">
+                        <mat-form-field>
+                            <mat-label>Sexo</mat-label>
+                            <mat-select>
+                              <mat-option *ngFor="let sexo of sexo" [value]="sexo.value">
+                                {{sexo.viewValue}}
+                              </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+
+                          <mat-form-field class="example-full-width">
+                            <mat-label>Data de nascimento</mat-label>
+                            <input type="date" matInput>
+                        </mat-form-field>
+
+                        <mat-form-field>
+                            <mat-label>Cargo</mat-label>
+                            <mat-select>
+                              <mat-option *ngFor="let cargo of cargo" [value]="cargo.value">
+                                {{cargo.viewValue}}
+                              </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </mat-card>
+
+
+    <mat-card class="home mat-elevation-z3">
+        <div class="row box-dados-content">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm dados-pessoais-de-adm-titulo">
+                        <mat-icon class="dados-icon-title">location_on</mat-icon>
+                        <h1 class="main-color">Endereço</h1>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm">
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Rua</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <mat-label>UF</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col-sm">
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Nº</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Cidade</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col-sm">
+                        <mat-form-field class="example-full-width">
+                            <mat-label>CEP</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Bairro</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col-sm">
+                        <mat-form-field class="example-full-width">
+                            <mat-label>complemento</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-card>
+
+
+    <div class="row" style="margin-top: 30px; margin-bottom: 30px;">
+
+        <div class="col-sm-8">
+            <!--Div para dar espaçamento-->
+        </div>
+
+        <div class="col-sm-2" style="text-align: end;">
+            <button class="btn btn-primary adm-button" type="submit" style="width: 100%; background-color: #09131c !important; border: none !important;"><i
+                class="material-icons item-vertical" style="margin-top: -3px; color: #d9ad45 !important;">add</i>Limpar</button>
+        </div>
+
+        <div class="col-sm-2">
+            <button class="btn btn-primary adm-button" type="submit" style="width: 100%; background-color: #09131c !important; border: none !important;"><i
+                class="material-icons item-vertical" style="margin-top: -3px; color: #d9ad45 !important;">check</i>Salvar</button>
+        </div>
+    </div>
+</div>

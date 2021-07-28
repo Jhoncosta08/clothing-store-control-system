@@ -1,0 +1,134 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-sidenav-container, .mat-sidenav-content, .mat-tab-body-content {
+    transform: none !important;
+}
+
+
+/*ajuste do over preto que trava a modal*/
+.modal-backdrop {
+    position: inherit !important;
+}
+
+
+/*Onde troca a cor do ícone de seta onde fica o menu acordeão*/
+.mat-expansion-indicator::after {
+    color: #09131c !important;
+}
+
+/*cores do sistema*/
+ .cor-principal {
+     color: #09131c !important;
+ }
+
+ .cor-secundaria {
+     color: #d9ad45 !important;
+ }
+
+ /*fim cores do sistema*/
+
+ /*cor do fundo do menu lateral (mat-sidenav)*/
+.mat-drawer-inner-container {
+    background-color: #d9ad45 !important;
+}
+
+/*ajuste do scroll lateral de todo o sistema*/
+.mat-drawer-content {
+    display: contents !important;
+}
+
+.tamanho-icone {
+    max-width: 65px !important;
+}
+
+.icone-home-box {
+    margin: 20px !important;
+    padding: 10px !important;
+    transition: all .5s;
+    border: 10px solid transparent;
+    box-shadow: 1px 1px 1px 1px #000;
+    cursor: pointer;
+    background-color: #09131c;
+    border-radius: 5px;
+}
+
+.icone-home-box h4 {
+    color: #d9ad45;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.icone-home-box p {
+    color: #d9ad45;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+
+.icone-home-box:hover{
+    border: 10px solid #d9ad45;
+    box-shadow: none;
+    border-radius: 15%;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+     transform: scale(1.1);
+}
+
+.display {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.display-left {
+    display: flex !important;
+    justify-content: left !important;
+}
+
+
+.imagem-circular  {
+    width: 125px !important;
+    height: 125px !important;
+    border-radius: 50% !important;
+}
+
+.item-vertical {
+    vertical-align: middle !important;
+}
+
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.base-text {
+    font-size: 19px !important;
+    color: #d9ad45 !important;
+    font-weight: 500 !important;
+    margin: 0px !important; 
+}
+
+.base-text-black {
+    font-size: 19px !important;
+    color: #09131c !important;
+    font-weight: 500 !important;
+    margin: 0px !important; 
+}
+
+.img-produto {
+    width: 100%;
+    max-width: 90px;
+    height: auto;
+    margin-bottom: 5px !important;
+}
+
+.mat-form-field {
+    width: 100% !important;
+}

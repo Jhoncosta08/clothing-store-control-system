@@ -1,0 +1,79 @@
+<div class="content-fluid adm-main-content">
+
+    <mat-card class="mat-elevation-z4" style=" margin-bottom: 30px;">
+        <div class="row text-center" style="margin-top: 30px;">
+            <div class="col-sm display adm-title">
+                <mat-icon class="icon-title">group</mat-icon>
+                <h1>Vendedores</h1>
+            </div>
+
+            <div class="col-sm">
+                <div class="main-search">
+                    <!-- Actual search box -->
+                    <div class="form-group has-search">
+                        <i class="material-icons form-control-feedback">search</i>
+                        <input type="text" class="form-control" placeholder="Buscar">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <button routerLink="/adicionar-vendedor" class="btn btn-primary adm-button" type="submit"><i
+                        class="material-icons item-vertical" style="margin-top: -3px; color: #d9ad45 !important;">add</i>Adicionar
+                    vendedor</button>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm legenda-btn" style="text-align: end;">
+                <div class="d-inline-block">
+                    <button class="btn btn-primary adm-button" id="dropdown-legenda-btn" type="submit"><i class="material-icons item-vertical" style="margin-top: -3px;">keyboard_arrow_down</i>Legendas</button>                
+                </div>
+            </div>
+              
+        </div>
+    
+        <!--cadastro1-->
+        <div class="row linha-pedido" style="margin: 10px 0px 10px 0px; border: 2px solid #d9ad45; border-radius: 10px">
+    
+            <div class="col-sm text-center">
+                <img src="assets/img/perfil-foto.jpg" id="adm-foto">
+            </div>
+    
+            <div class="col-sm">
+                <p class="nome-cadastro"><i class="material-icons item-vertical main-color info-cadastro-icon">face</i>Jhonatan Silva da Costa</p>
+                <p class="data-aniver-cadastro"><i class="material-icons item-vertical main-color info-cadastro-icon">cake</i>05/08/1997</p>
+                <p class="email-cadastro"><i class="material-icons item-vertical main-color info-cadastro-icon">mail_outline</i>jhonatan@teste.com.br</p>
+            </div>
+    
+            <div class="col-sm">
+                <div class="data-cadastro data-cadastro-box">
+                    <p class="main-color" style="font-weight: 500; font-size: 15px;">Data cadastro:</p>
+                    <p style="font-weight: 500; font-size: 14px; color: #696969; margin-top: 1px; margin-left: 3px;">05/04/2020</p>
+                </div>
+            </div>
+    
+            <div class="col-sm">
+                <div class="row" style="margin: 36px 10px 10px 10px;">
+                    <div class="col-sm" style="border: 1px solid #cecece; border-top-left-radius: 15px; border-bottom-left-radius: 15px;">
+                        <a routerLink="/EditarPerfilAdm"><i class="material-icons cadastro-icons">edit</i></a>
+                    </div>
+    
+                    <div class="col-sm" style="border: 1px solid #cecece;">
+                        <i class="material-icons cadastro-icons">delete</i>
+                    </div>
+    
+                    <div class="col-sm" style="border: 1px solid #cecece;">
+                        <a routerLink="/PerfilAdm"><i class="material-icons cadastro-icons">person_outline</i></a>
+                    </div>
+    
+                    <div class="col-sm" style="border: 1px solid #cecece; border-top-right-radius: 15px; border-bottom-right-radius: 15px;">
+                        <i class="material-icons cadastro-icons">mail_outline</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-card>
+
+</div>

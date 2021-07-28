@@ -1,0 +1,269 @@
+<mat-sidenav-container class="sidenav-container-principal" role="navigation" mode="side">
+
+    <div class="row header">
+        <div class="col-md-1 icone-hamburguer-container" (click)="sidenav.toggle()">
+            <mat-icon id="header-hamburguer-icone">
+                menu
+            </mat-icon>
+        </div>
+
+        <div class="col-md-8">
+            <div class="logo-content">
+                <span>
+                    <a routerLink="/">
+                        <img class="logo" src="assets/img/logo.png">
+                    </a>
+                </span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="info-header">
+
+                <div class="avisos-icon">
+                    <a data-toggle="modal" data-target="#modalExemplo" style="cursor: pointer;">
+                        <i matBadge="1" matBadgePosition="before" matBadgeColor="warn" class="material-icons aviso">
+                            mail_outline
+                        </i>
+                    </a>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header" style="background-color: #d9ad45; border-bottom: 2px solid #09131c !important;">
+                                    <h2 class="modal-title" id="exampleModalLabel">Vendas em aberto</h2>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body" style="background-color: #d9ad45;">
+                                    <mat-card class="mat-elevation-z6" style="border-radius: 20px; background-color: #09131c;">
+                                        <div class="row" style="text-align: center;">
+                                            <div class="col-sm" style="border-right: 1px solid #d9ad45;">
+                                                <div>
+                                                    <h2 style="color: #d9ad45;">Cliente</h2>
+                                                </div>
+    
+                                                <div>
+                                                    <p style="color: #d9ad45;">Jhonatan Silva da Costa</p>
+                                                </div>
+    
+                                                <div>
+                                                    <p style="color: #d9ad45;">Teste@teste.com.br</p>
+                                                </div>
+                                            </div>
+    
+                                            <div class="col-sm">
+                                                <div>
+                                                    <h2 style="color: #d9ad45;">Vendedor</h2>
+                                                </div>
+    
+                                                <div>
+                                                    <p style="color: #d9ad45;">José Aparecido Neto</p>
+                                                </div>
+    
+                                                <div>
+                                                    <p style="color: #d9ad45;">1545341543</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </mat-card>
+                                </div>
+                                <!--botão ver mais-->
+                                <div class="text-center" style="background-color: #d9ad45;">
+                                    <button routerLink="/lista-vendas" type="button" data-dismiss="modal"
+                                        aria-label="Fechar" class="btn btn-secondary ver-mais-btn-modal"
+                                        style="width: 50%; margin-bottom: 15px; background-color: #09131c !important; border: none;">Ver mais</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="usuario">
+                    <p id="usuario-logado-nome-header">Jhonatan Silva da costa</p>
+                    <p id="usuario-privilegio-header">ADM do sistema</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <mat-sidenav class="menu-lateral-container" #sidenav mode='over'>
+
+        <mat-nav-list class="nav-list">
+
+            <li>
+                <a mat-list-item routerLink="/" (click)="sidenav.toggle();">
+                    <i class="material-icons">
+                        home
+                    </i>
+                    Inicio
+                </a>
+            </li>
+
+            <mat-accordion>
+                <mat-expansion-panel class="expansion-menu fundo-cor-secundaria">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <i class="material-icons">
+                                attach_money
+                            </i>
+                            Caixa
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <li>
+                        <a mat-list-item routerLink="/iniciar-pausar-caixa" (click)="sidenav.toggle();">
+                            <i class="material-icons">
+                                play_circle_outline
+                            </i>
+                            <span style="font-size: 15px;">Iniciar/pausar caixa</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a mat-list-item routerLink="/fechar-caixa" (click)="sidenav.toggle();">
+                            <i class="material-icons">
+                                not_interested
+                            </i>
+                            <span style="font-size: 15px;">Fechar-caixa</span>
+                        </a>
+                    </li>
+                </mat-expansion-panel>
+            </mat-accordion>
+
+            <mat-accordion>
+                <mat-expansion-panel class="expansion-menu fundo-cor-secundaria">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <i class="material-icons">
+                                assignment_ind
+                            </i>
+                            Cadastro
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <li>
+                        <a mat-list-item routerLink="/Lista-adm" (click)="sidenav.toggle();">
+                            <i class="material-icons">
+                                person_add_alt_1
+                            </i>
+                            <span style="font-size: 15px;">Cadastrar ADM</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a mat-list-item routerLink="/Lista-vendedor" (click)="sidenav.toggle();">
+                            <i class="material-icons">
+                                person_add_alt_1
+                            </i>
+                            <span style="font-size: 15px;">Cadastrar Vendedor</span>
+                        </a>
+                    </li>
+                </mat-expansion-panel>
+            </mat-accordion>
+
+            <li>
+                <a mat-list-item routerLink="/lista-vendas" (click)="sidenav.toggle();">
+                    <i class="material-icons">
+                        shopping_cart
+                    </i>
+                    Vendas
+                </a>
+            </li>
+
+            <li>
+                <a mat-list-item routerLink="/lista-produtos" (click)="sidenav.toggle();">
+                    <i class="material-icons">
+                        view_list
+                    </i>
+                    Produtos
+                </a>
+            </li>
+
+            <li>
+                <a mat-list-item routerLink="/lista-categorias" (click)="sidenav.toggle();">
+                    <i class="material-icons">
+                        list_alt
+                    </i>
+                    Categorias
+                </a>
+            </li>
+
+            <li>
+                <a mat-list-item routerLink="/lista-variacoes" (click)="sidenav.toggle();">
+                    <i class="material-icons">
+                        list
+                    </i>
+                    Variações
+                </a>
+            </li>
+
+            <li>
+                <a mat-list-item routerLink="/lista-entregas" (click)="sidenav.toggle();">
+                    <i class="material-icons">
+                        local_shipping
+                    </i>
+                    Entregas
+                </a>
+            </li>
+
+            <mat-accordion>
+                <mat-expansion-panel class="expansion-menu fundo-cor-secundaria">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <i class="material-icons">
+                                assignment
+                            </i>
+                            Relatórios
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <li>
+                        <a mat-list-item routerLink="/relatorio-vendas" (click)="sidenav.toggle();">
+                            <i class="material-icons">
+                                description
+                            </i>
+                            <span style="font-size: 15px;">Relatório de vendas</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a mat-list-item routerLink="/relatorio-produtos" (click)="sidenav.toggle();">
+                            <i class="material-icons">
+                                description
+                            </i>
+                            <span style="font-size: 15px;">Relatório de produtos</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a mat-list-item routerLink="/relatorio-vendedores" (click)="sidenav.toggle();">
+                            <i class="material-icons">
+                                description
+                            </i>
+                            <span style="font-size: 15px;">Relatório de vendedores</span>
+                        </a>
+                    </li>
+
+                </mat-expansion-panel>
+            </mat-accordion>
+
+            <li>
+                <a mat-list-item (click)="sidenav.toggle();">
+                    <i class="material-icons">
+                        login
+                    </i>
+                    <span style="font-size: 15px;">Sair</span>
+                </a>
+            </li>
+
+        </mat-nav-list>
+    </mat-sidenav>
+
+
+    <div class="main-content">
+        <router-outlet></router-outlet>
+    </div>
+
+</mat-sidenav-container>

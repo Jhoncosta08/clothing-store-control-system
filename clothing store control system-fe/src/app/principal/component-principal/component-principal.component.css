@@ -1,0 +1,227 @@
+
+/*container que fica o icone hamburguer do header*/
+.icone-hamburguer-container {
+    text-align: center;
+    margin-top: 1%; 
+    cursor: pointer;
+}
+
+/*icone hamburguer do header*/
+#header-hamburguer-icone {
+     height: 10px;
+     width: 80px;
+     color: #d9ad45; 
+}
+
+/*mat-sidenav-container-principal*/
+.sidenav-container-principal {
+    height: 100%;
+    overflow-x: hidden; 
+    overflow-y: auto;
+}
+
+/*cor de fundo do acordeão do menu de navegação a parte que abre ao clicar*/
+.expansion-menu {
+    background-color: #d9ad45 !important;
+}
+
+
+.menu-lateral-container {
+    background-color: #d9ad45;
+    width: 250px;
+}
+
+
+
+
+/*estilo do menu do acordeon*/
+.mat-expansion-panel-header {
+    padding: 0px 15px !important;
+    border-radius: 0px !important;
+    background-color: #d9ad45  !important;
+}
+
+/*cor do titulo do item do acordeao*/
+.mat-expansion-panel-header-title {
+    color: #09131c !important;
+}
+
+
+/*container principal onde fica o router principal*/
+.main-content {
+    margin: 0px 10px 0px 10px; 
+}
+
+.mat-accordion .mat-expansion-panel:last-of-type {
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+
+.mat-accordion .mat-expansion-panel:first-of-type {
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+}
+
+.mat-expansion-panel {
+    box-shadow: none !important;
+}
+
+/*tamanho da fonte do menu*/
+.expansion-menu a {
+    font-size: 15px;
+}
+
+/*borda do acordeao*/
+.mat-expansion-panel-header {
+    border-bottom: 1px solid #09131c;
+}
+
+/*borda dos itens que não são títulos do menu*/
+.mat-list-item {
+    border-bottom: 1px solid #09131c;
+}
+
+/*fim do estilo do menu do acordeon*/
+
+
+
+
+
+
+
+
+/*lista dos itens do menu de navegação*/
+
+/*formata links da lista*/
+.nav-list a {
+    color: #09131c;
+}
+
+/*formata os icones da lista*/
+.nav-list i {
+    padding-right: 10px;
+}
+
+/*formata os itens da lista*/
+.nav-list li {
+    text-decoration: none;
+    list-style: none;
+}
+
+/*formata toda a estrutura da lista*/
+.nav-list ul {
+    padding: 0px;
+}
+
+/*fim lista dos itens do menu de navegação*/
+
+
+
+
+
+
+/*barra do menu onde fica a logo*/
+.header {
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 10px solid #d9ad45;
+    padding-bottom: 15px;
+    background-color: #09131c;
+}
+
+/*formata os links do menu onde fica a logo*/
+.header a {
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*formata a logo do menu*/
+.header .logo {
+    max-height: 70px;
+    margin-top: 10px;
+}
+
+/*formata o box onde fica a logo*/
+.logo-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+/*formata os icones do material*/
+.material-icons {
+    width: 30px !important;
+}
+
+/*conteiner onde fica o icone do email com aviso e o nome de quem está logado*/
+.info-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 6px;
+    margin-right: 15px;
+}
+
+/*container que fica o nome do usuario logado*/
+.usuario {
+    margin-top: 10px !important;
+}
+
+/*container que fica o nome do usuario logado e privilegio*/
+.info-header .usuario p {
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 5px;
+    font-weight: 500;
+}
+
+/*edita o texto do privilegio do usuario logado do header*/
+#usuario-privilegio-header {
+    margin-top: -15px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #fff;
+}
+
+/*edita o texto do nome do usuario logado do header*/
+#usuario-logado-nome-header {
+    font-size: 15px;
+    font-weight: 500;
+    color: #d9ad45 ;
+}
+
+/*icone de aviso do menu de navegação*/
+.aviso {
+    color: #d9ad45  !important;
+}
+
+
+/*botão ver pedido da modal do icone de email do header*/
+.ver-pedido-button-content {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*título ver pedido da modal do icone de email do header*/
+.pedidosClientes h1 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/*texto ver pedido da modal do icone de email do header*/
+.pedidosClientes p {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.ver-mais-btn-modal {
+    color: #d9ad45!important;
+}
+
+
+.ver-mais-btn-modal:hover {
+    color: #fff !important;
+}

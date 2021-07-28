@@ -1,0 +1,247 @@
+
+.title-page h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #09131c;
+    margin-top: 5px;
+}
+
+.title-page p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #df1a00;
+    margin-top: 2px !important;
+    margin-left: 5px !important;
+}
+
+.adm-main-content {
+    margin-top: 40px;
+}
+
+.icon-title {
+    background-color: #09131c;
+    width: 40px !important;
+    height: 40px !important;
+    text-align: center;
+    color: #d9ad45;
+    border-radius: 5px;
+    padding-top: 8px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.adm-title h1 {
+    margin-top: 3px;
+}
+
+/* Styles for wrapping the search box */
+
+.main-search {
+    width: 100%;
+}
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    border-radius: 15px;
+}
+
+.form-group{
+    margin: 0rem !important;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.perfil-adm-icon {
+    background-color: #013474;
+    width: 30px !important;
+    height: 30px !important;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    padding-top: 4px;
+    margin-right: 10px;
+    margin-left: 10px;
+    vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    border-radius: 20px;
+}
+
+
+
+/*float effect box-content */
+.perfil-adm-icon:hover, .perfil-adm-icon:focus, .perfil-adm-icon:active {
+	-webkit-transform: translateY(-8px);
+	transform: translateY(-8px);
+    text-decoration: none;
+}
+
+.lista-todos-adm {
+    margin-top: 40px;
+}
+
+.lista-todos-adm h1 {
+    font-size: 18px;
+}
+
+.adm-button {
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    background-color: #09131c !important;
+    border: none !important;
+}
+
+/*float effect box-content */
+.adm-button:hover, .adm-button:focus, .adm-button:active {
+	-webkit-transform: translateY(-8px);
+	transform: translateY(-8px);
+    text-decoration: none;
+    border: none !important;
+}
+
+.form-check-input {
+    position: fixed;
+    margin-top: 53px;
+    margin-left: -8px;
+}
+
+#adm-foto {
+    margin-top: 18px;
+    width: 80px !important;
+    height: 80px !important;
+    border-radius: 50%;
+}
+
+.info-cadastro-icon {
+    margin-right: 5px;
+}
+
+.nome-cadastro {
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.data-aniver-cadastro {
+    font-weight: 500;
+    font-size: 12px;
+    color: #696969;
+}
+
+.email-cadastro {
+    font-weight: 500;
+    font-size: 12px;
+    color: #696969;
+}
+
+.data-cadastro {
+    display:flex; 
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cadastro-icons {
+    cursor: pointer;
+    background-color: #09131c;
+    width: 30px !important;
+    height: 30px !important;
+    text-align: center;
+    color: #d9ad45;
+    border-radius: 15px;
+    padding-top: 3px;
+    margin: 7px 0px 7px 8px;
+    -webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.cadastro-icons:hover, .cadastro-icons:focus, .cadastro-icons:active {
+	-webkit-transform: translateY(-5px);
+	transform: translateY(-5px);
+    text-decoration: none;
+}
+
+.dropdown-toggle::after {
+    content: none !important;
+}
+
+.cadastro-icons-legenda {
+    background-color: #013474;
+    width: 30px !important;
+    height: 30px !important;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    padding-top: 3px;
+    margin: 7px 5px 7px 2px;
+    vertical-align: middle;
+}
+
+.legenda-texto {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#legenda-dropdown {
+    background-color: #dbd9d9;
+    left: 0px !important;
+    top: 5px !important;
+}
+
+.input-checkbox-legenda {
+    margin-top: 2px !important;
+    margin-left: -20px;
+}
+
+#texto-checkbox-legenda {
+    margin-left: 60px;
+}
+
+#dropdown-legenda-btn {
+    background-color: #d9ad45 !important;
+    color: #09131c;
+    margin-right: 98px;
+    padding: 5px 33px 5px 33px;
+    margin-top: 20px;
+}
+
+.gallery-btn {
+    background-color: #09131c;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+} 
+
+.gallery-btn span {
+    color: #fff;
+}

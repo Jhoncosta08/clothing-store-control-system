@@ -1,0 +1,35 @@
+<mat-card class="mat-elevation-z8" style="margin-bottom: 20px;">
+  <div class="row">
+    <div class="col-sm">
+        <mat-form-field appearance="fill">
+            <mat-label>Variações</mat-label>
+            <mat-select [formControl]="variacaoControl" multiple>
+                <mat-option>-- Sem variação --</mat-option>
+                <mat-optgroup *ngFor="let group of variacaoGroups" [label]="group.name"
+                  [disabled]="group.disabled">
+                  <mat-option *ngFor="let variacao of group.variacao" [value]="variacao.value">
+                    {{variacao.viewValue}}
+                  </mat-option>
+                </mat-optgroup>
+            </mat-select>
+          </mat-form-field>
+    </div>
+
+    <div class="col-sm">
+        <mat-form-field appearance="fill">
+            <mat-label>Categorias</mat-label>
+            <mat-select [formControl]="categoriaControl" multiple>
+                <mat-option>-- Sem categoria --</mat-option>
+                <mat-optgroup *ngFor="let group of categoriaGroups" [label]="group.name"
+                  [disabled]="group.disabled">
+                  <mat-option *ngFor="let categoria of group.categoria" [value]="categoria.value">
+                    {{categoria.viewValue}}
+                  </mat-option>
+                </mat-optgroup>
+            </mat-select>
+          </mat-form-field>
+    </div>
+</div>
+  
+
+</mat-card>

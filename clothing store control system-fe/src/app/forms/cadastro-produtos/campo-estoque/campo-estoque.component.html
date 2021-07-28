@@ -1,0 +1,35 @@
+<mat-card class="mat-elevation-z8" style="margin-bottom: 20px;">
+    <div class="row">
+        <div class="col-sm">
+            <mat-form-field>
+                <mat-label>SKU</mat-label>
+                <input matInput formControlName="firstCtrl" >
+            </mat-form-field>
+        </div>
+    
+        <div class="col-sm">
+            <mat-form-field>
+                <mat-label>Estoque</mat-label>
+                <input matInput formControlName="firstCtrl" >
+            </mat-form-field>
+        </div>
+    
+        <div class="col-sm">
+            <mat-form-field>
+                <mat-label>Texto quando faltar estoque</mat-label>
+                <input matInput formControlName="firstCtrl" >
+            </mat-form-field>
+        </div>
+    
+        <div class="col-sm">
+            <mat-form-field>
+                <mat-label>Visível</mat-label>
+                <mat-select>
+                  <mat-option *ngFor="let visivel of visivel" [value]="visivel.value">
+                    {{visivel.viewValue}}
+                  </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+</mat-card>

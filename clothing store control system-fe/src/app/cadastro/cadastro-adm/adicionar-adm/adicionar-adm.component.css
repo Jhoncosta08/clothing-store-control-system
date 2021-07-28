@@ -1,0 +1,62 @@
+.back-button {
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+/*float effect box-content */
+.back-button:hover, .back-button:focus, .back-button:active {
+	-webkit-transform: translateY(-8px);
+	transform: translateY(-8px);
+    text-decoration: none;
+}
+
+.cadastro-de-adm-titulo h1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.dados-pessoais-de-adm-titulo {
+	display: flex;
+	justify-content: left;
+	margin-bottom: 30px;
+}
+
+.dados-pessoais-de-adm-titulo h1 {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.dados-icon-title {
+    background-color: #09131c;
+    width: 40px !important;
+    height: 40px !important;
+    text-align: center;
+    color: #d9ad45;
+    border-radius: 5px;
+    padding-top: 8px;
+	margin-right: 10px;
+	margin-left: -1px;;
+}
+
+.box-dados-content {
+	border: 1px solid #6c757d;
+	border-radius: 15px;
+	margin: 0px !important;
+	padding: 30px;
+}
+
+.foto-cadastro-adm {
+	margin-top: 5px;
+	font-weight: 600;
+	font-size: 15px;
+}
+
+input[type="file"] {
+    display: none;
+}

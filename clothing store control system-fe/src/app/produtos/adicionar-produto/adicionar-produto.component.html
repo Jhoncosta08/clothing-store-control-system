@@ -1,0 +1,85 @@
+<mat-card class="mat-elevation-z8">
+    <div class="row">
+        <div class="col-sm">
+            <div class="title-page-box">
+                <div class="title-page display-left ">
+                    <mat-icon class="icon-title">attach_money</mat-icon>
+                    <h3>Adicionar produtos</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</mat-card>
+
+<mat-card class="mat-elevation-z8" style="margin-top: 20px;">
+    <div class="row">
+        <div class="col-sm">
+            <!-- <button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear" style="margin-bottom: 20px !important;">
+                {{!isLinear ? 'Ativar modo linear' : 'Desativar modo linear'}}
+            </button> -->
+            <mat-horizontal-stepper [linear]="isLinear" #stepper>
+                <mat-step [stepControl]="firstFormGroup">
+                    <form [formGroup]="firstFormGroup">
+                        <ng-template matStepLabel>Geral</ng-template>
+
+                        <app-campo-geral></app-campo-geral>
+                        <div>
+                            <button mat-raised-button matStepperNext>Próximo</button>
+                        </div>
+                    </form>
+                </mat-step>
+                <mat-step [stepControl]="secondFormGroup">
+                    <form [formGroup]="secondFormGroup">
+                        <ng-template matStepLabel>Estoque</ng-template>                    
+                        <app-campo-estoque></app-campo-estoque>
+                        <div>
+                            <button mat-raised-button matStepperPrevious>Voltar</button>
+                            <button mat-raised-button matStepperNext>Próximo</button>
+                        </div>
+                    </form>
+                </mat-step>
+                <mat-step [stepControl]="thirdFormGroup">
+                    <form [formGroup]="thirdFormGroup">
+                        <ng-template matStepLabel>Variações/Categorias</ng-template>                    
+                        <app-campo-variacao></app-campo-variacao>
+                        <div>
+                            <button mat-raised-button matStepperPrevious>Voltar</button>
+                            <button mat-raised-button matStepperNext>Próximo</button>
+                        </div>
+                    </form>
+                </mat-step>
+
+                <mat-step [stepControl]="fourFormGroup">
+                    <form [formGroup]="fourFormGroup">
+                        <ng-template matStepLabel>Imagens</ng-template>                    
+                        <app-campo-imagens></app-campo-imagens>
+                        <div>
+                            <button mat-raised-button matStepperPrevious>Voltar</button>
+                            <button mat-raised-button matStepperNext>Próximo</button>
+                        </div>
+                    </form>
+                </mat-step>
+
+                <mat-step [stepControl]="fiveFormGroup">
+                    <form [formGroup]="fiveFormGroup">
+                        <ng-template matStepLabel>Preços</ng-template>                    
+                        <app-campo-preco></app-campo-preco>
+                        <div>
+                            <button mat-raised-button matStepperPrevious>Voltar</button>
+                            <button mat-raised-button matStepperNext>Próximo</button>
+                        </div>
+                    </form>
+                </mat-step>
+                <mat-step>
+                    <ng-template matStepLabel>Finalizar</ng-template>
+                    <app-finalizar-cadastro></app-finalizar-cadastro>
+                    <div>
+                        <button mat-raised-button matStepperPrevious>Voltar</button>
+                        <button mat-raised-button>Salvar</button>
+                        <button mat-raised-button (click)="stepper.reset()">Limpar tudo</button>
+                    </div>
+                </mat-step>
+            </mat-horizontal-stepper>
+        </div>
+    </div>
+</mat-card>

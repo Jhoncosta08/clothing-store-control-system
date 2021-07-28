@@ -1,0 +1,124 @@
+
+.title-page h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #09131c;
+    margin-top: 5px;
+}
+
+.title-page p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #df1a00;
+    margin-top: 2px !important;
+    margin-left: 5px !important;
+}
+
+.icon-title {
+    background-color: #09131c;
+    width: 40px !important;
+    height: 40px !important;
+    text-align: center;
+    color: #d9ad45;
+    border-radius: 5px;
+    padding-top: 8px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+/* Styles for wrapping the search box */
+
+.main-search {
+    width: 100%;
+}
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    border-radius: 15px;
+}
+
+.form-group{
+    margin: 0rem !important;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.produtos-box {
+    margin-top: 10px !important;
+    border: 1px solid #cecece;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.add-product-icon {
+    background-color: #09131c;
+    width: 40px !important;
+    height: 40px !important;
+    text-align: center;
+    color: #d9ad45;
+    border-radius: 5px;
+    padding-top: 8px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+.delete-product-icon {
+    background-color: #09131c;
+    width: 40px !important;
+    height: 40px !important;
+    text-align: center;
+    color: #d9ad45;
+    border-radius: 5px;
+    padding-top: 8px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-top: -7px !important;
+}
+
+.titulos-referencias {
+    border: 1px solid #cecece;
+    padding: 20px;
+    background-color: #ebe9e9;
+}
+
+.linha-titulos-referencias{
+    margin-top: 1px;
+}
+
+
+
+.produtos-referencias {
+    border: 1px solid #cecece;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.linha-produtos-referencias{
+    margin-top: 1px;
+}
+
+.linha-produtos-referencias p {
+    font-size: 15px !important;
+    color: #09131c !important;
+    font-weight: 500 !important;
+    margin: 0px !important; 
+}
+
+.ajuste-central {
+    margin-top: 5px;
+}

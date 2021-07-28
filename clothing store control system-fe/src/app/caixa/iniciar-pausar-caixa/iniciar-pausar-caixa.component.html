@@ -1,0 +1,134 @@
+<mat-card class="mat-elevation-z8">
+    <div class="row">
+        <div class="col-sm">
+            <div class="title-page-box">
+                <div class="title-page display-left ">
+                    <mat-icon class="icon-title">attach_money</mat-icon>
+                    <h3>Dados do caixa</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm">
+            <div class="col-sm" style="text-align: end;">
+                <button data-toggle="modal" data-target="#modal-iniciar-caixa"
+                    class="btn btn-primary adm-button iniciar-caixa" type="submit">Iniciar caixa</button>
+            </div>
+        </div>
+
+        <div class="col-sm">
+            <div class="col-sm" style="text-align: start;">
+                <button class="btn btn-primary adm-button pausar-caixa" type="submit">Pausar caixa</button>
+            </div>
+        </div>
+
+        <div class="col-sm">
+            <div class="title-page display-left" style="align-items: center !important;">
+                <h3>Valor em caixa</h3>
+                <p>R$: 1.345,77</p>
+            </div>
+        </div>
+    </div>
+</mat-card>
+
+<mat-card class="mat-elevation-z8" style="margin-top: 20px;">
+    <div class="title-page-box">
+        <div class="title-page display-left ">
+            <mat-icon class="icon-title">play_circle_outline</mat-icon>
+            <h3>Inicio do caixa</h3>
+        </div>
+    </div>
+    <!--Lista do relatório-->
+    <table class="table" style="text-align: center;">
+        <thead>
+          <tr>
+            <th scope="col">Nome do usuario</th>
+            <th scope="col">Data inicio</th>
+            <th scope="col">Hora do inicio</th>
+            <th scope="col">Valor inicial</th>
+          </tr>
+        </thead>
+        <tbody style="border-bottom: 1px solid #cecece;">
+          <tr>
+            <td class="numero">Jhonatan Costa</td>
+            <td class="Data">01/06/2020</td>
+            <td class="Cliente">11:32</td>
+            <td class="Cliente">500,00</td>
+          </tr>
+
+
+        </tbody>
+      </table>
+</mat-card>
+
+<mat-card class="mat-elevation-z8" style="margin-top: 20px;">
+    <div class="title-page-box">
+        <div class="title-page display-left ">
+            <mat-icon class="icon-title">pause_circle_outline</mat-icon>
+            <h3>Pausa do caixa</h3>
+        </div>
+    </div>
+    <!--Lista do relatório-->
+    <table class="table" style="text-align: center;">
+        <thead>
+          <tr>
+            <th scope="col">Nome do usuario</th>
+            <th scope="col">Data pausa</th>
+            <th scope="col">Hora pausa</th>
+          </tr>
+        </thead>
+        <tbody style="border-bottom: 1px solid #cecece;">
+          <tr>
+            <td class="numero">Jhonatan Costa</td>
+            <td class="Data">01/06/2020</td>
+            <td class="Cliente">11:57</td>
+          </tr>
+
+
+        </tbody>
+      </table>
+</mat-card>
+
+
+<!--Modal-->
+<div class="modal fade" id="modal-iniciar-caixa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLabel">Dados do caixa</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <div class="form-group">
+                    <label for="formGroupExampleInput"></label>
+                    <input type="text" class="form-control" id="formGroupExampleInput"
+                        placeholder="Jhonatan Silva da Costa">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="formGroupExampleInput"></label>
+                    <input type="number" class="form-control" id="formGroupExampleInput"
+                        placeholder="Digite o valor inicial do caixa">
+                </div>
+
+                <div class="custom-control custom-checkbox"
+                    style="margin-top: 20px; margin-bottom: 15px; text-align: left !important;">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Por favor confirme o valor</label>
+                </div>
+
+                <div class="form-group" style="text-align: left !important;">
+                    <label for="exampleFormControlTextarea1">Observação:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Iniciar caixa</button>
+            </div>
+        </div>
+    </div>
+</div>
