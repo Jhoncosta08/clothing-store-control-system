@@ -1,11 +1,11 @@
-##Summary:
+#Summary:
 
 Angular design of a management system
 of a clothing store, both the part of registering employees and products, as well as
 also cash flow control.
 
 
-##Requirements guide:
+#Requirements guide:
 
 - [x] Node-js is required to run this project
 You can access more information about the node at:
@@ -18,7 +18,7 @@ You can access more information about angular at:
 [https://angular.io/](https://angular.io/)
 
 
-##Execution Guide:
+#Execution Guide:
 
 - [x] Cloning the project on your machine
 - [x] open the project folder with cmd
@@ -45,7 +45,7 @@ this command is to create a local server on port 4200 of your browser to run the
 - [x] TypeScript
 - [x] Angular
 
-##Project
+#Project
 
 <p>
   <img src="https://github.com/Jhoncosta08/clothing-store-control-system/blob/master/clothing%20store%20control%20system-fe/src/assets/projeto.png" style="width: auto; max-height: 300px">
