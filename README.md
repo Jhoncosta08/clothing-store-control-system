@@ -1,6 +1,6 @@
 <h2>Summary:</h2>
 
-Angular design of a management system
+Angular project of a management system
 of a clothing store, both the part of registering employees and products, as well as
 also cash flow control.
 
